@@ -19,9 +19,9 @@ else :
 print "Accessed via:",accessName,"\n<p>"
 
 if querystring != None:
-   url = 'http://ec2-13-56-81-221.us-west-1.compute.amazonaws.com/cgi-bin/data.py?querystring=' + querystring
+   url = 'http://3tier-app01a:8888/cgi-bin/data.py?querystring=' + querystring
 else:
-   url = 'http://ec2-13-56-81-221.us-west-1.compute.amazonaws.com/cgi-bin/data.py'
+   url = 'http://3tier-app01a:8888/cgi-bin/data.py'
    querystring = ""
 
 r = requests.get(url)
