@@ -2,10 +2,6 @@
 import os, sys, cgi
 import requests
 
-webservers = {
-  '172.16.10.110':'web-01a'
- }
-
 print "Content-type:text/html\n\n";
 print "<head><title>Customer Database</title></head>\n"
 print "<body>\n"
